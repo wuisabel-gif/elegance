@@ -252,6 +252,19 @@ a:hover { text-decoration: underline; }
 .code .c { color: #7e7259; }      /* comment  */
 .code .k { color: #c9a96a; }      /* keyword  */
 
+/* Typewriter */
+.type-out { white-space: pre-wrap; word-break: break-word; min-height: 8.5em; }
+.type-cursor {
+  display: inline-block;
+  width: 7px;
+  height: 1.05em;
+  background: #d8cdb8;
+  margin-left: 1px;
+  vertical-align: -2px;
+  animation: type-blink 1s steps(1) infinite;
+}
+@keyframes type-blink { 50% { opacity: 0; } }
+
 /* CTA */
 .final { text-align: center; padding: 3.25rem 0; }
 .final h2 { font-size: clamp(2.25rem, 6vw, 3.5rem); margin-bottom: 1.25rem; }

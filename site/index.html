@@ -174,15 +174,11 @@
       <div class="cols">
         <div>
           <span class="eyebrow" style="color:#caa86e">Why PHP, not plain HTML</span>
-          <h2>Stop pasting the same navbar into every file.</h2>
-          <p>Static HTML makes you copy the chrome onto every page. PHP keeps the same simple, build-free workflow and lets you write it once, then loop over your data. Same easy hosting. Far less to maintain.</p>
+          <h2>Write it once. Not on every page.</h2>
+          <p>By hand, the same navbar gets pasted onto page after page. With elegance you write it once and pull it in. Watch the difference&nbsp;&rarr;</p>
         </div>
         <div>
-          <div class="code"><span class="c">&lt;!-- the boring way --&gt;</span><br>
-&lt;nav&gt; ... copy ... &lt;/nav&gt;<br>
-&lt;nav&gt; ... paste ... &lt;/nav&gt;<br><br>
-<span class="c">// the elegance way</span><br>
-<span class="k">&lt;?php</span> require('includes/header.php') <span class="k">?&gt;</span></div>
+          <div class="code"><div class="type-out" id="typed"></div></div>
         </div>
       </div>
     </div>
@@ -224,6 +220,39 @@ cp -R elegance ~/.claude/skills/elegance<br><br>
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
     els.forEach(function (e) { io.observe(e); });
+  })();
+
+  // Typewriter: compare the by-hand way to the one-line way
+  (function () {
+    var el = document.getElementById('typed');
+    if (!el) return;
+    function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+    var steps = [
+      { t: "<!-- by hand, every page... -->\n" },
+      { t: "<nav>...</nav>  <header>...</header>\n", d: 16 },
+      { t: "<nav>...</nav>  <header>...</header>\n", d: 16 },
+      { t: "<nav>...</nav>  <header>...</header>\n", d: 16 },
+      { pause: 1000 },
+      { clear: true },
+      { t: "<!-- ...or write it once -->\n" },
+      { t: "<?php require('includes/header.php') ?>", d: 42 }
+    ];
+    var buffer = '', si = 0, ci = 0;
+    function render() { el.innerHTML = esc(buffer) + '<span class="type-cursor"></span>'; }
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { buffer = "<!-- ...or write it once -->\n<?php require('includes/header.php') ?>"; render(); return; }
+    function step() {
+      if (si >= steps.length) return;
+      var s = steps[si];
+      if (s.clear) { buffer = ''; render(); si++; setTimeout(step, 250); return; }
+      if (s.pause) { si++; setTimeout(step, s.pause); return; }
+      if (ci < s.t.length) { buffer += s.t[ci++]; render(); setTimeout(step, s.d || 26); return; }
+      ci = 0; si++; setTimeout(step, 140);
+    }
+    var io2 = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { render(); step(); io2.disconnect(); } });
+    }, { threshold: 0.4 });
+    io2.observe(el);
   })();
   </script>
 
