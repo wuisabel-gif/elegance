@@ -37,6 +37,8 @@
   .grid .reveal:nth-child(4) { --d: 0.30s; }
   .grid .reveal:nth-child(5) { --d: 0.40s; }
   .grid .reveal:nth-child(6) { --d: 0.50s; }
+  .grid .reveal:nth-child(7) { --d: 0.60s; }
+  .grid .reveal:nth-child(8) { --d: 0.70s; }
 }
 
 body {
