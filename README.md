@@ -1,4 +1,10 @@
-# elegance (Claude skill)
+<p align="center">
+  <img src="logo.png" alt="elegance logo" width="120">
+</p>
+
+<h1 align="center">elegance</h1>
+
+<p align="center">A Claude skill for beautiful PHP + Bootstrap sites &middot; 🌐 <a href="https://wuisabel-gif.github.io/elegance/"><strong>Live demo</strong></a></p>
 
 A Claude skill for building good-looking PHP + Bootstrap websites, or turning a
 static HTML site into PHP. It sets up the theme and the shared layout, adds a
