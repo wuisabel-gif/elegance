@@ -40,7 +40,7 @@ For tech, agencies, anything that wants to feel clean and confident.
 ```
 
 ## Aurora — near-black, neon glow, geometric
-For dev tools, launches, nightlife. Use the accent at low opacity for glows and
+For dev tools, SaaS, launches, nightlife. Use the accent at low opacity for glows and
 hairline borders (radial gradients, soft shadows), not big solid fills.
 ```css
 :root {
@@ -49,6 +49,17 @@ hairline borders (radial gradients, soft shadows), not big solid fills.
   --ink: #e8e6f5; --muted: #a59fc4;
 }
 /* Fonts: Space Grotesk (display) + Inter (body) */
+```
+
+## Botanical — soft green, calm
+For spas, wellness, yoga, plant shops, gardeners. Quiet and restorative.
+```css
+:root {
+  --brand: #4a6b4f; --brand-lt: #6f9173;
+  --bg: #eef1ea; --bg-2: #e3e8dd; --bark: #d3dccb;
+  --ink: #232a20; --muted: #5d6555;
+}
+/* Fonts: Cormorant Garamond (display) + Spectral (body) */
 ```
 
 ## Choosing & customizing
