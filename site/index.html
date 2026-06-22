@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>elegance — beautiful PHP, without the repetition</title>
+  <meta name="description" content="A Claude skill for building beautiful PHP + Bootstrap websites, or converting a static HTML site to PHP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&family=Spectral:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="#a9824c" stroke-width="2.5"/>
+          <text x="50" y="69" text-anchor="middle" font-family="Rouletta, serif" font-size="58" font-weight="600" fill="#1d1b17">e</text>
+        </svg>
+        elegance
+      </a>
+      <div class="nav-links">
+        <a href="#why">Why PHP</a>
+        <a href="#start">Get started</a>
+        <a class="btn btn-ghost" href="https://github.com/wuisabel-gif" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero wrap">
+    <span class="eyebrow reveal" style="--d:.05s">A Claude skill</span>
+    <h1 class="reveal" style="--d:.15s">Beautiful PHP,<br>without the repetition.</h1>
+    <p class="lead reveal" style="--d:.3s">Build a polished PHP&nbsp;+&nbsp;Bootstrap site, or turn a static HTML one into it. Shared layout, content from data, real forms, one&#8209;file deploy.</p>
+    <div class="cta reveal" style="--d:.45s">
+      <a class="btn btn-solid" href="#start">Get started</a>
+      <a class="btn btn-ghost" href="#why">Why PHP</a>
+    </div>
+  </header>
+
+  <hr class="rule">
+
+  <!-- The three things that matter -->
+  <section class="section wrap">
+    <div class="grid">
+      <div class="card reveal">
+        <div class="num">01</div>
+        <h3>Write it once</h3>
+        <p>The navbar, head, and footer live in one place. Edit them once, not on every page.</p>
+      </div>
+      <div class="card reveal">
+        <div class="num">02</div>
+        <h3>Content from data</h3>
+        <p>A whole menu renders from one array. Change a price in a single line.</p>
+      </div>
+      <div class="card reveal">
+        <div class="num">03</div>
+        <h3>Ship it</h3>
+        <p>A three-line Dockerfile puts it on Render. No build step, no server to babysit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Made with elegance -->
+  <section class="section wrap" id="example">
+    <div class="section-head reveal">
+      <span class="eyebrow">Made with elegance</span>
+      <h2>Real sites, one skill.</h2>
+      <p>Different brands, different moods — the same build underneath.</p>
+    </div>
+    <div class="examples">
+      <figure class="showcase reveal">
+        <div class="showcase-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="showcase-url">valholl.onrender.com</span>
+        </div>
+        <iframe class="showcase-frame" src="https://valholl.onrender.com" title="Valhöll — a site built with elegance" loading="lazy"></iframe>
+        <figcaption class="showcase-cap">
+          <strong>Valhöll</strong> — a Viking mead hall.
+          <a href="https://valholl.onrender.com" target="_blank" rel="noopener">Visit&nbsp;&rarr;</a>
+        </figcaption>
+      </figure>
+      <figure class="showcase reveal">
+        <div class="showcase-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="showcase-url">wuisabel-gif.github.io/westmont-nails</span>
+        </div>
+        <iframe class="showcase-frame" src="https://wuisabel-gif.github.io/westmont-nails/" title="Westmont Nails — a site built with elegance" loading="lazy"></iframe>
+        <figcaption class="showcase-cap">
+          <strong>Westmont Nails</strong> — a nail studio.
+          <a href="https://wuisabel-gif.github.io/westmont-nails/" target="_blank" rel="noopener">Visit&nbsp;&rarr;</a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Styles -->
+  <section class="section wrap" id="styles">
+    <div class="section-head reveal">
+      <span class="eyebrow">One skill, many looks</span>
+      <h2>Pick a style, or describe your own.</h2>
+      <p>Every site starts from a theme of palette and type. Swap the variables, swap the whole mood.</p>
+    </div>
+    <div class="grid">
+      <div class="style-card reveal" style="--sb:#1c140d;--st:#ece3d2;--sa:#c79b4b;--sd:'Cinzel',serif;--sf:'Spectral',serif">
+        <div class="s-dots"><i style="background:#1c140d;border:1px solid #3a2a1a"></i><i style="background:#c79b4b"></i><i style="background:#ece3d2"></i></div>
+        <div class="s-eyebrow">Mead Hall</div>
+        <div class="s-title">Feast &amp; Fire</div>
+        <div class="s-body">Dark, gold, carved. Cinzel over Spectral.</div>
+        <span class="s-btn">Claim a Table</span>
+      </div>
+      <div class="style-card reveal" style="--sb:#f7f3ec;--st:#1d1b17;--sa:#a9824c;--sd:'Cormorant Garamond',serif;--sf:'Spectral',serif">
+        <div class="s-dots"><i style="background:#f7f3ec;border:1px solid #e2d8c8"></i><i style="background:#a9824c"></i><i style="background:#1d1b17"></i></div>
+        <div class="s-eyebrow">Editorial</div>
+        <div class="s-title">Quiet Luxury</div>
+        <div class="s-body">Ivory, bronze, serif. Calm and refined.</div>
+        <span class="s-btn">Read more</span>
+      </div>
+      <div class="style-card reveal" style="--sb:#ffffff;--st:#111111;--sa:#111111;--sd:'Space Grotesk',sans-serif;--sf:'Space Grotesk',sans-serif">
+        <div class="s-dots"><i style="background:#ffffff;border:1px solid #e2e2e3"></i><i style="background:#111111"></i><i style="background:#9a9a9a"></i></div>
+        <div class="s-eyebrow">Minimal</div>
+        <div class="s-title">Just the Work</div>
+        <div class="s-body">White space, black type, no ornament.</div>
+        <span class="s-btn">View work</span>
+      </div>
+      <div class="style-card reveal" style="--sb:#0d0b1a;--st:#e8e6f5;--sa:#8b7cff;--sd:'Space Grotesk',sans-serif;--sf:'Space Grotesk',sans-serif">
+        <div class="s-dots"><i style="background:#0d0b1a;border:1px solid #2a2640"></i><i style="background:#8b7cff"></i><i style="background:#38bdf8"></i></div>
+        <div class="s-eyebrow">Aurora</div>
+        <div class="s-title">Built Different</div>
+        <div class="s-body">Near-black, neon glow, geometric sans.</div>
+        <span class="s-btn">Get started</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why PHP -->
+  <section class="section wrap" id="why">
+    <div class="band reveal">
+      <div class="cols">
+        <div>
+          <span class="eyebrow" style="color:#caa86e">Why PHP, not plain HTML</span>
+          <h2>Stop pasting the same navbar into every file.</h2>
+          <p>Static HTML makes you copy the chrome onto every page. PHP keeps the same simple, build-free workflow and lets you write it once, then loop over your data. Same easy hosting. Far less to maintain.</p>
+        </div>
+        <div>
+          <div class="code"><span class="c">&lt;!-- the boring way --&gt;</span><br>
+&lt;nav&gt; ... copy ... &lt;/nav&gt;<br>
+&lt;nav&gt; ... paste ... &lt;/nav&gt;<br><br>
+<span class="c">// the elegance way</span><br>
+<span class="k">&lt;?php</span> require('includes/header.php') <span class="k">?&gt;</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get started -->
+  <section class="section wrap" id="start">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get started</span>
+      <h2>Install, then just ask.</h2>
+    </div>
+    <div class="reveal" style="max-width:720px;margin:0 auto">
+      <div class="code" style="background:#1d1b17;border-color:#3a342a">
+<span class="c"># add the skill</span><br>
+cp -R elegance ~/.claude/skills/elegance<br><br>
+<span class="c"># then, in Claude:</span><br>
+"Build me a PHP + Bootstrap site for a coffee shop called Emberhaus."
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final wrap reveal">
+    <h2>Elegance, by default.</h2>
+    <a class="btn btn-solid" href="https://github.com/wuisabel-gif" target="_blank" rel="noopener">View on GitHub</a>
+  </section>
+
+  <footer>
+    <div class="wrap">elegance &middot; a Claude skill for beautiful PHP + Bootstrap sites</div>
+  </footer>
+
+  <script>
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+  </script>
+
+</body>
+</html>

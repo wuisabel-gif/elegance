@@ -1,0 +1,77 @@
+/* {{BRAND}} — custom theme on top of Bootstrap 5.
+   Edit the variables; reuse them everywhere. Never hardcode a color twice. */
+
+:root {
+  --brand:    #c79b4b;   /* primary / accent */
+  --brand-lt: #e6c178;
+  --bg:       #1c140d;   /* page background */
+  --bg-2:     #2a1d12;   /* cards / panels  */
+  --bark:     #3a2a1a;   /* borders         */
+  --ink:      #ece3d2;   /* body text       */
+  --muted:    #b6ab97;   /* secondary text  */
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: 'Spectral', Georgia, serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main { flex: 1 0 auto; }
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.02em;
+}
+
+/* Navbar */
+.navbar-brandbar { background-color: var(--bg-2); border-bottom: 2px solid var(--brand); }
+.navbar-brandbar .navbar-brand { color: var(--brand-lt); font-weight: 900; }
+.navbar-brandbar .nav-link { color: var(--ink); text-transform: uppercase; font-family: 'Cinzel', serif; font-size: 0.85rem; letter-spacing: 0.08em; }
+.navbar-brandbar .nav-link:hover { color: var(--brand-lt); }
+.brand-logo { height: 44px; width: auto; margin-right: 0.6rem; }
+
+/* Buttons */
+.btn-brand { background-color: var(--brand); border: 1px solid var(--brand); color: var(--bg); font-family: 'Cinzel', serif; font-weight: 700; text-transform: uppercase; }
+.btn-brand:hover { background-color: var(--brand-lt); border-color: var(--brand-lt); color: var(--bg); }
+.btn-outline-brand { border: 1px solid var(--brand); color: var(--brand-lt); font-family: 'Cinzel', serif; font-weight: 700; text-transform: uppercase; }
+.btn-outline-brand:hover { background-color: var(--brand); color: var(--bg); }
+
+/* Hero + banners (layer a dark gradient over a photo so text stays readable) */
+.hero, .page-banner {
+  background:
+    linear-gradient(rgba(15,10,6,0.6), rgba(15,10,6,0.85)),
+    url('../assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--bark);
+  border-radius: 6px;
+}
+.hero-content { position: relative; z-index: 2; }
+.eyebrow { display: inline-block; color: var(--brand); text-transform: uppercase; letter-spacing: 0.3em; font-family: 'Cinzel', serif; font-size: 0.8rem; margin-bottom: 1rem; }
+.hero-title, .page-title { color: var(--ink); }
+.hero-lead, .page-lead { color: #cabfab; max-width: 640px; margin: 1rem auto 2rem; }
+
+/* Sections */
+.section-title { color: var(--brand-lt); }
+.section-divider { border-bottom: 2px solid var(--brand); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+
+/* Cards */
+.card-x { background: var(--bg-2); border: 1px solid var(--bark); border-radius: 8px; overflow: hidden; }
+.card-photo { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; background-color: #0f0a06; }
+.card-body-x { padding: 1rem 1.1rem 1.2rem; }
+.card-name { font-family: 'Cinzel', serif; color: var(--ink); font-size: 1.05rem; margin: 0; }
+.card-price { font-family: 'Cinzel', serif; color: var(--brand-lt); font-weight: 700; }
+.card-desc { color: var(--muted); font-size: 0.92rem; margin: 0.4rem 0 0; }
+.card-section { color: #8c8475; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin: 0.5rem 0 0; }
+
+/* Footer */
+.footer-brand { background-color: #150e08; border-top: 2px solid var(--brand); }
+.footer-heading { color: var(--brand-lt); font-size: 1.1rem; }
+.footer-text { color: #a99e8b; margin: 0; }
+.footer-divider { border-color: var(--bark); margin: 2rem 0 1rem; }
+.footer-copy { color: #7d7464; font-size: 0.85rem; }
+.footer-copy a { color: var(--brand-lt); text-decoration: none; }
+.footer-copy a:hover { text-decoration: underline; }
