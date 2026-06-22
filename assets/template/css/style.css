@@ -67,6 +67,29 @@ h1, h2, h3, h4, h5, .navbar-brand {
 .card-desc { color: var(--muted); font-size: 0.92rem; margin: 0.4rem 0 0; }
 .card-section { color: #8c8475; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin: 0.5rem 0 0; }
 
+/* About: stats & values */
+.story-text { color: var(--muted); font-size: 1.05rem; }
+.saga-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.stat { background: var(--bg-2); border: 1px solid var(--bark); border-radius: 6px; padding: 1.5rem 1rem; text-align: center; }
+.stat-num { display: block; font-family: 'Cinzel', serif; font-size: 2.4rem; color: var(--brand-lt); }
+.stat-label { color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem; }
+.value-card { background: var(--bg-2); border: 1px solid var(--bark); border-radius: 6px; padding: 2rem 1.5rem; height: 100%; }
+.value-title { color: var(--ink); margin: 0 0 0.5rem; font-size: 1.25rem; }
+.value-text { color: var(--muted); }
+.map-embed { border: 1px solid var(--brand); border-radius: 6px; overflow: hidden; }
+.map-embed iframe { display: block; width: 100%; height: 380px; border: 0; filter: grayscale(0.3) brightness(0.95); }
+
+/* Gallery tiles + lightbox */
+.tile { position: relative; margin: 0; border-radius: 8px; overflow: hidden; border: 1px solid var(--bark); cursor: zoom-in; }
+.tile img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.tile:hover img { transform: scale(1.06); }
+.tile figcaption { position: absolute; inset: auto 0 0 0; padding: 1.6rem 0.75rem 0.8rem; background: linear-gradient(transparent, rgba(0,0,0,0.85)); color: #fff; font-family: 'Cinzel', serif; text-align: center; font-size: 0.95rem; }
+.lightbox { position: fixed; inset: 0; z-index: 1080; display: none; align-items: center; justify-content: center; padding: 2rem; background: rgba(0,0,0,0.92); }
+.lightbox.open { display: flex; }
+.lightbox-img { max-width: 92vw; max-height: 82vh; border: 1px solid var(--brand); border-radius: 6px; }
+.lightbox-caption { position: absolute; bottom: 1.5rem; left: 0; right: 0; text-align: center; color: var(--brand-lt); font-family: 'Cinzel', serif; font-size: 1.2rem; }
+.lightbox-close { position: absolute; top: 0.75rem; right: 1.5rem; background: none; border: none; color: #fff; font-size: 2.75rem; line-height: 1; cursor: pointer; }
+
 /* Footer */
 .footer-brand { background-color: #150e08; border-top: 2px solid var(--brand); }
 .footer-heading { color: var(--brand-lt); font-size: 1.1rem; }

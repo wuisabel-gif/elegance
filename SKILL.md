@@ -78,8 +78,9 @@ sensible defaults and confirm.
 
 ### Step 2 — Scaffold from the template
 Copy `assets/template/` into a new `app/` (or brand-named) folder. It contains a
-working skeleton: `index.php`, `menu.php`, `search.php`, `contact.php`,
-`includes/`, `css/style.css`, and `Dockerfile`. Replace `{{BRAND}}`,
+working skeleton: `index.php`, `menu.php`, `gallery.php` (image grid + lightbox),
+`about.php` (story, stats, values, map), `search.php`, `contact.php`, `includes/`,
+`css/style.css`, and `Dockerfile`. Drop only the pages the brand needs. Replace `{{BRAND}}`,
 `{{TAGLINE}}`, palette variables, and nav links.
 
 See `references/structure-and-conventions.md` for the full file map and the exact

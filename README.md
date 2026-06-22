@@ -42,7 +42,7 @@ SKILL.md                                  the instructions Claude reads
 references/structure-and-conventions.md   the full file map and code patterns
 scripts/optimize-images.sh                PNG to JPEG, logo shrink, favicon (macOS sips)
 assets/template/                          a working starter site to copy
-  index.php menu.php search.php contact.php
+  index.php menu.php gallery.php about.php search.php contact.php
   includes/{head,header,footer,menu-data}.php
   css/style.css
   Dockerfile
