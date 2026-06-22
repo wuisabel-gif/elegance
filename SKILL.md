@@ -151,5 +151,6 @@ When the user already has `.html` pages, don't rebuild from scratch — refactor
 ## Reference files
 - `references/structure-and-conventions.md` — full file map, code patterns, deploy notes.
 - `references/style-presets.md` — ready-made themes (Mead Hall, Editorial, Minimal, Aurora).
+- `references/palettes.pdf` — a one-pager of 10 colour schemes + font pairings to show clients (source: `palettes.html`).
 - `assets/template/` — copy-ready starter site.
 - `scripts/optimize-images.sh` — the image pipeline.

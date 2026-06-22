@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>elegance — 10 colour schemes &amp; font pairings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&family=Jost:wght@400;600&family=Mulish:wght@400;700&family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&family=Space+Grotesk:wght@500;700&family=Spectral:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 14mm; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: 'Inter', sans-serif; color: #1d1b17; }
+  header { text-align: center; margin-bottom: 18px; }
+  header .kick { text-transform: uppercase; letter-spacing: .3em; font-size: 9px; color: #a9824c; }
+  header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 30px; margin: 6px 0 2px; }
+  header p { color: #5b5650; font-size: 11px; margin: 0; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .card { border: 1px solid #e2d8c8; border-radius: 10px; overflow: hidden; break-inside: avoid; }
+  .preview { background: var(--bg); color: var(--tx); padding: 16px 16px 14px; font-family: var(--body); }
+  .preview .name { color: var(--ac); text-transform: uppercase; letter-spacing: .18em; font-size: 8px; font-family: var(--body); }
+  .preview .num { float: right; color: var(--ac); font-family: var(--disp); font-size: 13px; opacity: .8; }
+  .preview .head { font-family: var(--disp); font-size: 23px; line-height: 1.05; margin: 3px 0 6px; }
+  .preview .body { font-family: var(--body); font-size: 9.5px; line-height: 1.5; opacity: .85; margin: 0; }
+  .preview .btn { display: inline-block; margin-top: 9px; background: var(--ac); color: var(--bg); font-family: var(--body); font-size: 7.5px; padding: 4px 10px; border-radius: 99px; letter-spacing: .04em; }
+  .meta { background: #fff; padding: 9px 10px; }
+  .sw { display: flex; gap: 5px; }
+  .sw span { flex: 1; font-family: 'JetBrains Mono', monospace; font-size: 6.5px; text-align: center; padding: 6px 2px; border-radius: 4px; border: 1px solid rgba(0,0,0,.08); }
+  .fonts { margin-top: 7px; font-size: 8.5px; color: #5b5650; }
+  .fonts b { color: #1d1b17; font-weight: 600; }
+  footer { text-align: center; color: #8a8276; font-size: 8px; margin-top: 16px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="kick">elegance</div>
+    <h1>10 colour schemes &amp; font pairings</h1>
+    <p>Drop a set into <code>:root</code>, load the two fonts, and the whole mood follows.</p>
+  </header>
+  <div class="grid">
+
+    <div class="card" style="--bg:#1c140d;--ac:#c79b4b;--tx:#ece3d2;--disp:'Cinzel',serif;--body:'Spectral',serif">
+      <div class="preview"><span class="num">01</span><div class="name">Mead Hall</div><div class="head">Reserve a table</div><p class="body">Dark and warm, gold on near-black. Built to make a room feel like a feast.</p><span class="btn">Book a table</span></div>
+      <div class="meta"><div class="sw"><span style="background:#1c140d;color:#ece3d2">#1C140D</span><span style="background:#c79b4b;color:#1c140d">#C79B4B</span><span style="background:#ece3d2;color:#1c140d">#ECE3D2</span></div><div class="fonts"><b>Cinzel</b> + Spectral</div></div>
+    </div>
+
+    <div class="card" style="--bg:#f7f3ec;--ac:#a9824c;--tx:#1d1b17;--disp:'Cormorant Garamond',serif;--body:'Spectral',serif">
+      <div class="preview"><span class="num">02</span><div class="name">Editorial</div><div class="head">Quiet luxury</div><p class="body">Ivory, bronze, serif. Calm and considered — the boutique look.</p><span class="btn">Read more</span></div>
+      <div class="meta"><div class="sw"><span style="background:#f7f3ec">#F7F3EC</span><span style="background:#a9824c;color:#fff">#A9824C</span><span style="background:#1d1b17;color:#fff">#1D1B17</span></div><div class="fonts"><b>Cormorant Garamond</b> + Spectral</div></div>
+    </div>
+
+    <div class="card" style="--bg:#ffffff;--ac:#111111;--tx:#111111;--disp:'Space Grotesk',sans-serif;--body:'Inter',sans-serif">
+      <div class="preview"><span class="num">03</span><div class="name">Minimal</div><div class="head">Just the work</div><p class="body">White space, black type, zero ornament. For studios and agencies.</p><span class="btn">Get a quote</span></div>
+      <div class="meta"><div class="sw"><span style="background:#ffffff">#FFFFFF</span><span style="background:#111111;color:#fff">#111111</span><span style="background:#9a9a9a;color:#fff">#9A9A9A</span></div><div class="fonts"><b>Space Grotesk</b> + Inter</div></div>
+    </div>
+
+    <div class="card" style="--bg:#0d0b1a;--ac:#8b7cff;--tx:#e8e6f5;--disp:'Space Grotesk',sans-serif;--body:'Inter',sans-serif">
+      <div class="preview"><span class="num">04</span><div class="name">Aurora</div><div class="head">Built different</div><p class="body">Near-black with a neon glow. Dev tools, launches, nightlife.</p><span class="btn">Start free</span></div>
+      <div class="meta"><div class="sw"><span style="background:#0d0b1a;color:#e8e6f5">#0D0B1A</span><span style="background:#8b7cff;color:#0d0b1a">#8B7CFF</span><span style="background:#38bdf8;color:#0d0b1a">#38BDF8</span></div><div class="fonts"><b>Space Grotesk</b> + Inter</div></div>
+    </div>
+
+    <div class="card" style="--bg:#fbf1ef;--ac:#b76e79;--tx:#4a3b3d;--disp:'Cormorant Garamond',serif;--body:'Jost',sans-serif">
+      <div class="preview"><span class="num">05</span><div class="name">Blush</div><div class="head">Book your set</div><p class="body">Soft blush and rose-gold. Salons, beauty, spas.</p><span class="btn">Book now</span></div>
+      <div class="meta"><div class="sw"><span style="background:#fbf1ef">#FBF1EF</span><span style="background:#b76e79;color:#fff">#B76E79</span><span style="background:#4a3b3d;color:#fff">#4A3B3D</span></div><div class="fonts"><b>Cormorant Garamond</b> + Jost</div></div>
+    </div>
+
+    <div class="card" style="--bg:#f5ece0;--ac:#b5651d;--tx:#3a2c1e;--disp:'Fraunces',serif;--body:'Nunito Sans',sans-serif">
+      <div class="preview"><span class="num">06</span><div class="name">Warm</div><div class="head">Today&rsquo;s bakes</div><p class="body">Cream and caramel. Cafés, bakeries, friendly and fresh.</p><span class="btn">See the menu</span></div>
+      <div class="meta"><div class="sw"><span style="background:#f5ece0">#F5ECE0</span><span style="background:#b5651d;color:#fff">#B5651D</span><span style="background:#3a2c1e;color:#fff">#3A2C1E</span></div><div class="fonts"><b>Fraunces</b> + Nunito Sans</div></div>
+    </div>
+
+    <div class="card" style="--bg:#f3f7f9;--ac:#2f8f9d;--tx:#1e2a33;--disp:'Inter',sans-serif;--body:'Inter',sans-serif">
+      <div class="preview"><span class="num">07</span><div class="name">Clinical</div><div class="head">Book a visit</div><p class="body">Cool, clean, calm. Clinics, dentists, wellness.</p><span class="btn">Book a visit</span></div>
+      <div class="meta"><div class="sw"><span style="background:#f3f7f9">#F3F7F9</span><span style="background:#2f8f9d;color:#fff">#2F8F9D</span><span style="background:#1e2a33;color:#fff">#1E2A33</span></div><div class="fonts"><b>Inter</b> + Inter</div></div>
+    </div>
+
+    <div class="card" style="--bg:#f4f1ea;--ac:#274b6d;--tx:#23262b;--disp:'Playfair Display',serif;--body:'Source Sans 3',sans-serif">
+      <div class="preview"><span class="num">08</span><div class="name">Scholarly</div><div class="head">Enroll today</div><p class="body">Warm paper, deep navy, serif. Schools, training, law.</p><span class="btn">Enroll now</span></div>
+      <div class="meta"><div class="sw"><span style="background:#f4f1ea">#F4F1EA</span><span style="background:#274b6d;color:#fff">#274B6D</span><span style="background:#23262b;color:#fff">#23262B</span></div><div class="fonts"><b>Playfair Display</b> + Source Sans 3</div></div>
+    </div>
+
+    <div class="card" style="--bg:#eef1ea;--ac:#4a6b4f;--tx:#232a20;--disp:'Fraunces',serif;--body:'Mulish',sans-serif">
+      <div class="preview"><span class="num">09</span><div class="name">Botanical</div><div class="head">Find your calm</div><p class="body">Soft green and stone. Spas, yoga, plant shops.</p><span class="btn">Book a session</span></div>
+      <div class="meta"><div class="sw"><span style="background:#eef1ea">#EEF1EA</span><span style="background:#4a6b4f;color:#fff">#4A6B4F</span><span style="background:#232a20;color:#fff">#232A20</span></div><div class="fonts"><b>Fraunces</b> + Mulish</div></div>
+    </div>
+
+    <div class="card" style="--bg:#0f1115;--ac:#e4b95b;--tx:#e8e6e3;--disp:'Space Grotesk',sans-serif;--body:'JetBrains Mono',monospace">
+      <div class="preview"><span class="num">10</span><div class="name">Mono Tech</div><div class="head">Ship it faster</div><p class="body">Charcoal, amber, monospace labels. SaaS and product.</p><span class="btn">Start building</span></div>
+      <div class="meta"><div class="sw"><span style="background:#0f1115;color:#e8e6e3">#0F1115</span><span style="background:#e4b95b;color:#0f1115">#E4B95B</span><span style="background:#e8e6e3;color:#0f1115">#E8E6E3</span></div><div class="fonts"><b>Space Grotesk</b> + JetBrains Mono</div></div>
+    </div>
+
+  </div>
+  <footer>elegance &middot; github.com/wuisabel-gif/elegance &middot; load fonts from fonts.google.com</footer>
+</body>
+</html>

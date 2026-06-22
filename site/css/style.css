@@ -32,9 +32,11 @@
   }
   .reveal.in { opacity: 1; transform: none; }
   /* stagger cards within a grid as they enter */
-  .grid .reveal:nth-child(2) { --d: 0.12s; }
-  .grid .reveal:nth-child(3) { --d: 0.24s; }
-  .grid .reveal:nth-child(4) { --d: 0.36s; }
+  .grid .reveal:nth-child(2) { --d: 0.10s; }
+  .grid .reveal:nth-child(3) { --d: 0.20s; }
+  .grid .reveal:nth-child(4) { --d: 0.30s; }
+  .grid .reveal:nth-child(5) { --d: 0.40s; }
+  .grid .reveal:nth-child(6) { --d: 0.50s; }
 }
 
 body {
