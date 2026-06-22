@@ -5,6 +5,18 @@ static HTML site into PHP. It sets up the theme and the shared layout, adds a
 menu, search, and contact page, shrinks the images, and gets everything ready to
 deploy. The point is that the site looks finished, not just that the PHP runs.
 
+## Why bother
+
+Most small-business sites look the same: a template, a stock photo, a font nobody
+picked. People notice. They decide whether they trust a place in about a second,
+before they read a word, and a site that looks thrown together makes a real
+business look careless.
+
+Looking better than that used to cost a designer, a developer, and a few weeks. It
+doesn't anymore. elegance gives you a site that looks considered, runs on plain PHP
+you can host almost anywhere, and stays easy to change later. Look like you meant
+it — without the agency bill.
+
 ## Why PHP instead of plain HTML
 
 With plain HTML you copy the navbar, the `<head>`, and the footer into every page.
