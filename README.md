@@ -46,14 +46,26 @@ actually filters. The hosting is just as simple either way.
 
 ## Install
 
-Copy the folder into your Claude skills directory:
+Works as a **Claude skill** and a **Gemini CLI extension** — same content, two entry
+points (`SKILL.md` for Claude, `GEMINI.md` for Gemini).
+
+**Claude** — copy the folder into your skills directory:
 
 ```bash
 cp -R elegance ~/.claude/skills/elegance
 ```
 
-The folder name becomes the skill's id, and the file has to stay named `SKILL.md`.
-Restart Claude Code if it's already open.
+The folder name becomes the skill's id; keep the file named `SKILL.md`. Restart
+Claude Code if it's already open.
+
+**Gemini CLI** — install it as an extension:
+
+```bash
+gemini extensions install https://github.com/wuisabel-gif/elegance
+```
+
+…or clone it into `~/.gemini/extensions/elegance`. Gemini reads `gemini-extension.json`
+and loads `GEMINI.md` as context.
 
 ## How to use it
 

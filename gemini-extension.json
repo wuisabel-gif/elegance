@@ -1,0 +1,6 @@
+{
+  "name": "elegance",
+  "version": "1.0.0",
+  "description": "Build beautiful PHP + Bootstrap websites, or convert a static HTML site to PHP. Shared layout, data-driven content, working search and forms, image optimization, and one-file Docker deploy.",
+  "contextFileName": "GEMINI.md"
+}
