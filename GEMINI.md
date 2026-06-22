@@ -50,7 +50,9 @@ complexity — you still write mostly HTML, you just stop repeating yourself:
 
 ## Workflow
 
-1. **Gather the brief** — brand name, what it is, vibe/palette, pages, sections. Infer defaults.
+1. **Gather the brief** — ask the questions in `references/intake-questions.md`: lead
+   with the four essentials (business + name, who it's for, the one action a visitor
+   should take, which pages), then look & feel. Infer defaults for the rest.
 2. **Scaffold** — copy `assets/template/` into `app/`. It has `index.php`, `menu.php`,
    `gallery.php`, `about.php`, `search.php`, `contact.php`, `includes/`, `css/style.css`,
    `Dockerfile`. Replace `{{BRAND}}`, `{{TAGLINE}}`, palette vars, nav links.
@@ -77,6 +79,7 @@ complexity — you still write mostly HTML, you just stop repeating yourself:
 5. Add meta/OG, optimize images, add the Dockerfile, verify.
 
 ## Reference files (read as needed)
+- `references/intake-questions.md` — discovery questions to ask when invoked.
 - `references/structure-and-conventions.md` — full file map and code patterns.
 - `references/style-presets.md` — ready-made themes.
 - `references/palettes.pdf` / `palettes.html` — 10 colour schemes + font pairings.

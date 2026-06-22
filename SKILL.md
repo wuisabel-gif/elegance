@@ -72,9 +72,11 @@ markup into a data array + loop, wire up the form and search).
 ## Workflow
 
 ### Step 1 — Gather the brief
-Ask for: brand name, what it is, vibe/palette (or infer), the pages needed, and
-the content sections (e.g. a menu? a team? a gallery?). Don't over-ask — infer
-sensible defaults and confirm.
+Ask the discovery questions in `references/intake-questions.md`. Lead with the four
+essentials (what the business is + name, who it's for, the one action a visitor
+should take, which pages), then a couple about look & feel. Don't over-ask — infer
+sensible defaults for the rest, say what you chose, and reflect the brief back in
+one line before building.
 
 ### Step 2 — Scaffold from the template
 Copy `assets/template/` into a new `app/` (or brand-named) folder. It contains a
@@ -149,6 +151,7 @@ When the user already has `.html` pages, don't rebuild from scratch — refactor
 5. **Finish:** add meta/OG tags, optimize images, add the `Dockerfile`, verify.
 
 ## Reference files
+- `references/intake-questions.md` — discovery questions to ask when invoked.
 - `references/structure-and-conventions.md` — full file map, code patterns, deploy notes.
 - `references/style-presets.md` — ready-made themes (Mead Hall, Editorial, Minimal, Aurora).
 - `references/palettes.pdf` — a one-pager of 10 colour schemes + font pairings to show clients (source: `palettes.html`).
