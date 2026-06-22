@@ -247,6 +247,16 @@ a:hover { text-decoration: underline; }
   .sigh-puff { transform-box: fill-box; transform-origin: center; opacity: 0; animation: sigh-puff 4.5s ease-in-out infinite; }
 }
 
+/* Happy figure (the after) */
+.happy-man { width: 132px; height: 152px; display: block; margin: 0 auto 1rem; }
+@keyframes happy-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes spark-twinkle { 0%, 100% { opacity: 0.15; transform: scale(0.6); } 50% { opacity: 1; transform: scale(1.1); } }
+@media (prefers-reduced-motion: no-preference) {
+  .happy-man { animation: happy-bob 1.8s ease-in-out infinite; }
+  .happy-man .spark { transform-box: fill-box; transform-origin: center; animation: spark-twinkle 1.5s ease-in-out infinite; }
+  .happy-man .spark-2 { animation-delay: 0.5s; }
+}
+
 /* Dark band: why PHP / code */
 .band { background: var(--ink-dark); color: #ece4d6; border-radius: 22px; padding: 2.5rem; margin: 0.5rem 0; }
 .band h2 { color: #fff; font-size: clamp(2rem, 5vw, 2.75rem); }
