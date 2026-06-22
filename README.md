@@ -7,15 +7,27 @@ deploy. The point is that the site looks finished, not just that the PHP runs.
 
 ## Why bother
 
-Most small-business sites look the same: a template, a stock photo, a font nobody
-picked. People notice. They decide whether they trust a place in about a second,
-before they read a word, and a site that looks thrown together makes a real
-business look careless.
+The look of a site isn't decoration — it's the first thing a customer reacts to,
+and the numbers are blunt:
 
-Looking better than that used to cost a designer, a developer, and a few weeks. It
-doesn't anymore. elegance gives you a site that looks considered, runs on plain PHP
-you can host almost anywhere, and stays easy to change later. Look like you meant
-it — without the agency bill.
+- **50 milliseconds** — how long it takes someone to form a first impression of
+  your site (Lindgaard et al., 2006).
+- **94%** of that first impression is design, not content (Sweor / ResearchGate).
+- **75%** of people judge a company's credibility on its website design alone
+  (Stanford Web Credibility Project).
+- **38%** stop engaging with a site when the layout is unattractive (Adobe).
+- **88%** of visitors are less likely to return after one bad experience.
+- **53%** of mobile visitors leave if a page takes longer than 3 seconds to load
+  (Google).
+
+Most small-business sites still look templated — a stock photo and a font nobody
+picked — and the numbers above are what that quietly costs them. Looking better
+used to take a designer, a developer, and a few weeks. It doesn't anymore. elegance
+gives you a site that looks considered, loads fast, runs on plain PHP you can host
+almost anywhere, and stays easy to change. Look like you meant it — without the
+agency bill.
+
+<sub>Figures are widely-cited UX and web-credibility findings; treat them as directional.</sub>
 
 ## Why PHP instead of plain HTML
 
