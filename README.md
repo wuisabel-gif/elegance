@@ -11,6 +11,10 @@ static HTML site into PHP. It sets up the theme and the shared layout, adds a
 menu, search, and contact page, shrinks the images, and gets everything ready to
 deploy. The point is that the site looks finished, not just that the PHP runs.
 
+Pairs with [Cadence](https://github.com/wuisabel-gif/Cadence): when it is
+installed, elegance runs the site copy through Cadence so the writing does not
+read like AI. If it is not, elegance follows the same anti-slop rules by hand.
+
 ## Why bother
 
 The look of a site isn't decoration — it's the first thing a customer reacts to,
