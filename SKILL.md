@@ -107,6 +107,19 @@ chosen background.
 Put real items in the PHP data array(s). Add real copy. For voice, write concrete
 and specific, not generic-marketing (see the README guidance in the reference).
 
+**De-slop the copy with Cadence.** Copy that reads like AI undercuts the whole
+"looks finished" goal, so run the visible prose through Cadence and aim for a low
+slop score (grade A or B):
+
+- `npx cadence-deslop <file>` scores it; `npx cadence-deslop --fix <file>` cleans
+  the mechanical tells. Needs Node, no install. Or use the `/cadence` skill if
+  it is installed.
+- **To install Cadence:** `npm install -g cadence-deslop` for the CLI, or add the
+  skill from `https://github.com/wuisabel-gif/Cadence`.
+- If Cadence is not available, self-edit instead: vary sentence length, cut
+  hollow-confidence words and clichéd openers, and drop lines like "In today's
+  world" or "we've got you covered."
+
 ### Step 5 — Add & optimize images
 Drop images in `assets/`, rename to slugs, then run:
 ```bash
