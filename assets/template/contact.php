@@ -75,7 +75,7 @@ function e($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
                     <button type="submit" class="btn btn-brand btn-lg">Send</button>
                 </div>
             </form>
-            <p class="mt-3"><small>Note: <code>mail()</code> needs SMTP configured on the host to actually deliver. For guaranteed delivery use a form service (Formspree, Web3Forms).</small></p>
+            <!-- Builder note (not shown to visitors): PHP mail() needs SMTP configured on the host to actually deliver, and it fails silently on Render / Railway / Fly without it. Default to a no-backend form service (Formspree / Web3Forms) unless the host has SMTP. See SKILL.md convention 9. -->
         </div>
     </div>
 </main>
