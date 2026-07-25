@@ -68,6 +68,14 @@ markup into a data array + loop, wire up the form and search).
 8. **Security on forms.** Validate every field server-side. Strip CR/LF from any
    value used in a `mail()` header (header-injection guard). Escape every echoed
    user value with `htmlspecialchars(..., ENT_QUOTES, 'UTF-8')`.
+9. **Contact form delivery: default to a form service.** PHP `mail()` silently
+   fails on Render / Railway / Fly and most shared hosts unless SMTP is configured,
+   which a non-technical owner will not do. Default the contact form to a
+   no-backend form service (Formspree or Web3Forms): the user pastes one endpoint
+   and it works anywhere, even on free static hosting. Use `mail()` only if the
+   user confirms their host has SMTP. Never leave setup notes ("needs SMTP", "use
+   Formspree") as visible text on the live page; keep them in an HTML comment for
+   the builder.
 
 ## Workflow
 
